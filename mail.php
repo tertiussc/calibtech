@@ -22,13 +22,13 @@ $message = $_POST['message'];
 try {
     //Recipients
     $mail->setFrom($email, $name); // Contact form name e.g. $first_name
-    $mail->addAddress('info@meliorateAfrica.com'); //Add a recipient -> Where to send the email to
-    $mail->addReplyTo('info@example.com', 'Information');
-    $mail->addCC('tertiussc@meliorateafrica.com', 'Tertius');
+    $mail->addAddress('info@calibtech.co.za'); //Add a recipient -> Where to send the email to
+    $mail->addReplyTo('info@calibtech.co.za', 'CalibTech Information');
+    $mail->addCC('thurstan@calibtech.co.za', 'Thurstan');
 
     //Content
     $mail->isHTML(true); //Set email format to HTML
-    $mail->Subject = 'Message from your website MeliorateAfrica.com FROM: ' . $name;
+    $mail->Subject = 'Message from your website CalibTech.co.za FROM: ' . $name;
     $mail->Body = $message . "<br> Contact number: " . $phone;
     $mail->AltBody = strip_tags($message);
 

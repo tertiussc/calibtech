@@ -34,7 +34,7 @@ require_once 'includes/SessionMessage.php'
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="#services">SERVICES</a>
+                        <a class="nav-link" href="#services" data-bs-offset="20">SERVICES</a>
                         <a class="nav-link" href="#portfolio">PORTFOLIO</a>
                         <a class="nav-link" href="#about">ABOUT</a>
                         <a class="nav-link" href="#team">TEAM</a>
@@ -113,7 +113,7 @@ require_once 'includes/SessionMessage.php'
                         <li class="lead">Full mechanical inspection</li>
                         <li class="lead">Cleaning and lubrication</li>
                         <li class="lead">Signal adjustment and inspection</li>
-                        <li class="lead">24 hour extended electronic inspection tes</li>
+                        <li class="lead">24 hour extended electronic inspection test</li>
                     </ul>
                     <h4>General</h4>
                     <ul class="list-unstyled">
@@ -137,7 +137,7 @@ require_once 'includes/SessionMessage.php'
                         <div class="card">
                             <img src="assets/img/portfolio/Port 1 thumb.png" class="card-img-top img-fluid" alt="Nuclear Density Gauges thumbnail">
                             <div class="card-body bg-success port-thumbnail-text">
-                                <h4 class="card-text text-light">Nuclear Density Gauges thumbnail</h4>
+                                <h4 class="card-text text-light">Nuclear Density Gauges</h4>
                             </div>
                         </div>
                     </button>
@@ -159,7 +159,7 @@ require_once 'includes/SessionMessage.php'
                         <div class="card">
                             <img src="assets/img/portfolio/Port 3 thumb.png" class="card-img-top img-fluid" alt="Concrete Crushing Machine thumbnail">
                             <div class="card-body bg-success port-thumbnail-text">
-                                <h4 class="card-text text-light">Concrete Crushing Machine thumbnail</h4>
+                                <h4 class="card-text text-light">Concrete Crushing Machine</h4>
                             </div>
                         </div>
                     </button>
@@ -174,7 +174,7 @@ require_once 'includes/SessionMessage.php'
                         <div class="card">
                             <img src="assets/img/portfolio/Port 4 thumb.png" class="card-img-top img-fluid" alt="Laboratory Ovens thumbnail">
                             <div class="card-body bg-success port-thumbnail-text">
-                                <h4 class="card-text text-light">Laboratory Ovens thumbnail</h4>
+                                <h4 class="card-text text-light">Laboratory Ovens</h4>
                             </div>
                         </div>
                     </button>
@@ -452,15 +452,16 @@ require_once 'includes/SessionMessage.php'
                             <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="mb-3">
-                            <label class="visually-hidden form-label" for="contact">Contact Number</label>
-                            <input type="text" class="form-control" id="contact" name="contact" placeholder="Contact Number">
+                            <label class="visually-hidden form-label" for="phone">Contact Number</label>
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Contact Number">
                         </div>
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
-                            <label class="text-muted" for="floatingTextarea2">Your Message</label>
+                            <textarea class="form-control" placeholder="Leave a comment here" id="message" name="message" style="height: 100px" required></textarea>
+                            <label class="text-muted" for="message">Your Message</label>
                         </div>
                         <div class="mb-3 d-grid">
                             <button type="submit" class="btn btn-warning" id="sendMessageButton">Send Message</button>
+                            <p class="lead">Or contact us on: 072 457 8514</p>
                         </div>
                     </form>
                 </div>
@@ -485,6 +486,9 @@ require_once 'includes/SessionMessage.php'
     <script>
         // Get the current year for the copyright
         $('#year').text(new Date().getFullYear());
+
+        // scrollspy stop
+        
     </script>
 </body>
 
